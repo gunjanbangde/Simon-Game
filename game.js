@@ -13,7 +13,6 @@ $(document).keypress(function () {
 
 function checkAnswer(currentLevel) {
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
-        console.log("success");
         if (userClickedPattern.length === gamePattern.length) {
             setTimeout(function () {
                 nextSequence();
@@ -26,7 +25,6 @@ function checkAnswer(currentLevel) {
         setTimeout(function(){
             $("body").removeClass("game-over");
         },200);
-        console.log("wrong");
         $("#level-title").text("Game Over, Press Any Key to Restart");
         startOver();
     }
