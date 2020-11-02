@@ -22,19 +22,19 @@ function checkAnswer(currentLevel) {
         var wroungAudio = new Audio("sounds/wrong.mp3");
         wroungAudio.play();
         $("body").addClass("game-over");
-        setTimeout(function(){
+        setTimeout(function () {
             $("body").removeClass("game-over");
-        },200);
+        }, 200);
         $("#level-title").text("Game Over, Press Any Key to Restart");
         startOver();
     }
 }
 
-function startOver(){
-    level=0;
-    first=true;
-    gamePattern=[];
-    userClickedPattern=[];
+function startOver() {
+    level = 0;
+    first = true;
+    gamePattern = [];
+    userClickedPattern = [];
 }
 
 function nextSequence() {
