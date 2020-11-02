@@ -36,6 +36,7 @@ function startOver(){
     level=0;
     first=true;
     gamePattern=[];
+    userClickedPattern=[];
 }
 
 function nextSequence() {
